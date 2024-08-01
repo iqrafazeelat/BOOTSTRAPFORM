@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Bootstarp Form</title>
+    <style>
+        .container{
+            background-color: rgb(91, 184, 184);
+        }
+    </style>
+</head>
+<body>
+    <!-- Bootstarp Form-->
+    <div class="container mt-3">
+      <h1> Form</h1>
+       <form action="/action_page.php" class="was-validated">
+        <div class="mb-3 mt-3">
+            <label for="uname" class="form-label">Username:</label>
+            <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+          </div>
+           <div class="mb-3">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email"  required>
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+           </div>
+           <div class="mb-3">
+              <label for="pwd">Password:</label>
+              <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+           </div>
+           <div class="mb-">
+              <label for="comment">Comments:</label>
+              <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+          </div>
+          <div class="d-flex ">
+             <label for="gender">Select Gender:</label>
+             <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2" required>
+                <label class="form-check-label" for="radio2">Female</label>
+             </div>
+             <div class="form-check" aria-required="true">
+                <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2" >
+                <label class="form-check-label" for="radio2">Male</label>
+             </div>
+             <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
+                <label class="form-check-label" for="radio2">Other</label>
+             </div>
+             <div class="valid-feedback">Valid.</div>
+             <div class="invalid-feedback">Please fill out this field.</div>
+          </div>
+          <div aria-required="true">
+               <label for="country" class="form-label" place>Select Country:</label>
+               <select class="form-select" name="country" id="country" required>
+                   <option type="radio" value="">America</option>
+                   <option value="">Italy</option>
+                   <option value="">Pakistan</option>
+                   <option value="">Turky</option>
+                   <option value="">UK</option>
+               </select>
+               <div class="valid-feedback">Valid.</div>
+               <div class="invalid-feedback">Please fill out this field.</div>
+          </div>   
+          <div class="form-check mb-3">
+              <label for="form-check-label">
+                   <input class="form-check-input" type="checkbox" name="remember" required> Remember me.
+              </label>
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+        </div>      
+        <div style="width:100%;">
+            <label for="customRange" class="form-label">Custom range</label>
+            <input type="range" class="form-range" id="customRange" step="10" name="points">
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Check this checkbox to continue.</div>
+        </div>   
+           <button type="submit" class="btn btn-primary">Submit</button>
+           
+     </form>
+    </div>
+</body>
+</html>
